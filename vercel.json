@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd shopmate-ai && npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "shopmate-ai/dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
