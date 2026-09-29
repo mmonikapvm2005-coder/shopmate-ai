@@ -1,0 +1,959 @@
+[
+  {
+    "id": "P001",
+    "name": "French Linen Camp Collar Shirt",
+    "category": "Clothing",
+    "brand": "Artisan Coast",
+    "price": 1299,
+    "description": "Ultra-breathable French flax linen shirt with an open camp collar, perfect for humid coastal weather.",
+    "rating": 4.8,
+    "colors": [
+      "olive",
+      "sand",
+      "white"
+    ],
+    "style": "resort casual",
+    "occasion": [
+      "travel",
+      "beach",
+      "daily"
+    ],
+    "tags": [
+      "linen",
+      "breathable",
+      "lightweight",
+      "summer"
+    ],
+    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "adventurous",
+      "chill"
+    ],
+    "mood_badge": "🌿 Coastal Wanderlust"
+  },
+  {
+    "id": "P002",
+    "name": "Drawstring Relaxed Linen Trousers",
+    "category": "Clothing",
+    "brand": "Nomad Tailors",
+    "price": 1599,
+    "description": "Comfortable relaxed-fit trousers with an elastic drawstring waistband and tapered ankle hems.",
+    "rating": 4.7,
+    "colors": [
+      "sand beige",
+      "charcoal",
+      "olive"
+    ],
+    "style": "casual",
+    "occasion": [
+      "travel",
+      "lounge",
+      "daily"
+    ],
+    "tags": [
+      "elastic waist",
+      "linen blend",
+      "neutral",
+      "comfortable"
+    ],
+    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "adventurous",
+      "chill"
+    ],
+    "mood_badge": "🌿 Coastal Wanderlust"
+  },
+  {
+    "id": "P003",
+    "name": "Textured Slub Waffle Knit Tee",
+    "category": "Clothing",
+    "brand": "Minimalist Studio",
+    "price": 899,
+    "description": "180 GSM heavyweight textured waffle knit t-shirt crafted from organic ring-spun cotton.",
+    "rating": 4.9,
+    "colors": [
+      "washed charcoal",
+      "ecru",
+      "dusty sage"
+    ],
+    "style": "minimalist",
+    "occasion": [
+      "daily",
+      "casual",
+      "travel"
+    ],
+    "tags": [
+      "cotton",
+      "textured",
+      "durable",
+      "pre-shrunk"
+    ],
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "adventurous"
+    ],
+    "mood_badge": "🧘 Relaxed Casual"
+  },
+  {
+    "id": "P004",
+    "name": "Pleated Resort Chino Shorts",
+    "category": "Clothing",
+    "brand": "Artisan Coast",
+    "price": 1099,
+    "description": "Tailored single-pleat resort shorts cut from quick-drying breathable tencel-cotton blend.",
+    "rating": 4.6,
+    "colors": [
+      "stone grey",
+      "navy",
+      "khaki"
+    ],
+    "style": "smart casual",
+    "occasion": [
+      "beach",
+      "party",
+      "travel"
+    ],
+    "tags": [
+      "pleated",
+      "quick-dry",
+      "tailored",
+      "lightweight"
+    ],
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "adventurous"
+    ],
+    "mood_badge": "🧘 Relaxed Casual"
+  },
+  {
+    "id": "P005",
+    "name": "Crinkled Slub Band-Collar Shirt",
+    "category": "Clothing",
+    "brand": "Nomad Tailors",
+    "price": 1399,
+    "description": "Relaxed Mandarin band-collar shirt with natural crinkle slub texture that requires zero ironing.",
+    "rating": 4.8,
+    "colors": [
+      "dusty terracotta",
+      "mineral white",
+      "slate blue"
+    ],
+    "style": "boho casual",
+    "occasion": [
+      "evening dining",
+      "vacation",
+      "daily"
+    ],
+    "tags": [
+      "mandarin collar",
+      "no-iron",
+      "crinkle texture",
+      "earthy"
+    ],
+    "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "adventurous"
+    ],
+    "mood_badge": "🧘 Relaxed Casual"
+  },
+  {
+    "id": "P006",
+    "name": "Organic Cotton Oxford Button-Down",
+    "category": "Clothing",
+    "brand": "Urban Thread",
+    "price": 1499,
+    "description": "Classic garment-dyed Oxford cotton shirt with structured collar and tailored silhouette.",
+    "rating": 4.7,
+    "colors": [
+      "white",
+      "sky blue",
+      "muted grey"
+    ],
+    "style": "smart casual",
+    "occasion": [
+      "office",
+      "interview",
+      "daily"
+    ],
+    "tags": [
+      "oxford cotton",
+      "tailored",
+      "formal",
+      "versatile"
+    ],
+    "image": "https://images.unsplash.com/photo-1589310243389-96a5483213a8?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "adventurous"
+    ],
+    "mood_badge": "🧘 Relaxed Casual"
+  },
+  {
+    "id": "P007",
+    "name": "Fine Gauge Ribbed Knit Polo",
+    "category": "Clothing",
+    "brand": "KnitCraft Co.",
+    "price": 1199,
+    "description": "Retro-inspired collar polo crafted from ultra-soft fine gauge mercerized combed cotton.",
+    "rating": 4.5,
+    "colors": [
+      "forest green",
+      "espresso",
+      "cream"
+    ],
+    "style": "retro modern",
+    "occasion": [
+      "work",
+      "casual",
+      "brunch"
+    ],
+    "tags": [
+      "polo",
+      "knitwear",
+      "mercerized",
+      "soft"
+    ],
+    "image": "https://images.unsplash.com/photo-1625910513413-72210a568285?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "adventurous"
+    ],
+    "mood_badge": "🧘 Relaxed Casual"
+  },
+  {
+    "id": "P008",
+    "name": "Studio Pro ANC Wireless Earbuds",
+    "category": "Electronics",
+    "brand": "Aura Acoustics",
+    "price": 3799,
+    "description": "Compact wireless earbuds featuring 35dB hybrid active noise cancellation and 40-hour total battery life.",
+    "rating": 4.9,
+    "colors": [
+      "matte obsidian",
+      "matte pearl"
+    ],
+    "style": "modern minimalist",
+    "occasion": [
+      "commute",
+      "work",
+      "travel",
+      "fitness"
+    ],
+    "tags": [
+      "anc",
+      "wireless",
+      "water-resistant",
+      "bluetooth 5.3"
+    ],
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "energetic"
+    ],
+    "mood_badge": "🎯 Deep Work ANC"
+  },
+  {
+    "id": "P009",
+    "name": "Waterproof Outdoor Bluetooth Speaker",
+    "category": "Electronics",
+    "brand": "SoundForge",
+    "price": 1899,
+    "description": "IPX7 waterproof portable speaker with rich 360-degree bass and 16-hour playtime.",
+    "rating": 4.7,
+    "colors": [
+      "slate black",
+      "forest teal"
+    ],
+    "style": "rugged outdoor",
+    "occasion": [
+      "travel",
+      "beach",
+      "party",
+      "outdoors"
+    ],
+    "tags": [
+      "waterproof",
+      "portable",
+      "deep bass",
+      "gift"
+    ],
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "celebratory",
+      "chill",
+      "adventurous"
+    ],
+    "mood_badge": "⚡ Social & Chill Audio"
+  },
+  {
+    "id": "P010",
+    "name": "Smart Ambient Desk Bar Light",
+    "category": "Electronics",
+    "brand": "LumiTech",
+    "price": 2299,
+    "description": "Screen-mounted asymmetric LED light bar with auto-dimming touch controls and warm backlight glow.",
+    "rating": 4.8,
+    "colors": [
+      "space grey",
+      "matte silver"
+    ],
+    "style": "minimalist workspace",
+    "occasion": [
+      "work",
+      "study",
+      "gaming"
+    ],
+    "tags": [
+      "desk lamp",
+      "anti-glare",
+      "usb-c",
+      "productivity"
+    ],
+    "image": "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P011",
+    "name": "Magnetic Fast Wireless Power Bank",
+    "category": "Electronics",
+    "brand": "ChargeFlow",
+    "price": 1499,
+    "description": "Slim 10000mAh magnetic battery pack compatible with MagSafe wireless charging and PD 20W fast output.",
+    "rating": 4.6,
+    "colors": [
+      "graphite",
+      "chalk white"
+    ],
+    "style": "compact modern",
+    "occasion": [
+      "travel",
+      "daily",
+      "commute"
+    ],
+    "tags": [
+      "power bank",
+      "magnetic",
+      "fast charge",
+      "travel essential"
+    ],
+    "image": "https://images.unsplash.com/photo-1609592424109-dd9892f1b177?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P012",
+    "name": "Hi-Res Over-Ear Studio Headphones",
+    "category": "Electronics",
+    "brand": "Aura Acoustics",
+    "price": 4999,
+    "description": "Memory foam cushioned over-ear headphones with custom 40mm beryllium drivers and multi-device pairing.",
+    "rating": 4.9,
+    "colors": [
+      "midnight black",
+      "champagne silver"
+    ],
+    "style": "luxury tech",
+    "occasion": [
+      "work",
+      "travel",
+      "music"
+    ],
+    "tags": [
+      "hi-res audio",
+      "over-ear",
+      "memory foam",
+      "premium"
+    ],
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "energetic"
+    ],
+    "mood_badge": "🎯 Deep Work ANC"
+  },
+  {
+    "id": "P013",
+    "name": "Ergonomic Silent Wireless Mouse",
+    "category": "Electronics",
+    "brand": "ErgoTech",
+    "price": 1299,
+    "description": "57-degree natural handshake angle mouse engineered to relieve wrist strain with whisper-quiet clicks.",
+    "rating": 4.7,
+    "colors": [
+      "graphite black",
+      "matte grey"
+    ],
+    "style": "ergonomic",
+    "occasion": [
+      "office",
+      "study",
+      "work"
+    ],
+    "tags": [
+      "ergonomic",
+      "silent click",
+      "dual-mode",
+      "productivity"
+    ],
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P014",
+    "name": "Smoked Oud & Bergamot Eau de Parfum",
+    "category": "Beauty",
+    "brand": "Maison Botanica",
+    "price": 2899,
+    "description": "100ml artisanal fragrance with Calabrian bergamot, smoky Cambodian agarwood, and bourbon vetiver.",
+    "rating": 4.8,
+    "colors": [
+      "amber glass"
+    ],
+    "style": "luxury",
+    "occasion": [
+      "evening",
+      "date night",
+      "gifting"
+    ],
+    "tags": [
+      "eau de parfum",
+      "unisex",
+      "long-lasting",
+      "velvet pouch"
+    ],
+    "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "energetic"
+    ],
+    "mood_badge": "🎯 Deep Work ANC"
+  },
+  {
+    "id": "P015",
+    "name": "Sea Salt & Coastal Sage Body Mist",
+    "category": "Beauty",
+    "brand": "Oceanique Lab",
+    "price": 999,
+    "description": "Refreshing mineral body mist infused with crushed sea salt, white sage, and aloe vera extract.",
+    "rating": 4.6,
+    "colors": [
+      "frosted blue"
+    ],
+    "style": "clean fresh",
+    "occasion": [
+      "post-workout",
+      "beach",
+      "daily"
+    ],
+    "tags": [
+      "body mist",
+      "hydrating",
+      "crisp scent",
+      "aloe"
+    ],
+    "image": "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "romantic"
+    ],
+    "mood_badge": "🧘 Self-Care & Unwind"
+  },
+  {
+    "id": "P016",
+    "name": "Charcoal Detox 3-Step Skincare Kit",
+    "category": "Beauty",
+    "brand": "PureSkin Essentials",
+    "price": 1299,
+    "description": "Complete gentle daily regimen: activated bamboo charcoal cleanser, niacinamide toner, and mattifying gel.",
+    "rating": 4.7,
+    "colors": [
+      "monochrome grey"
+    ],
+    "style": "minimalist wellness",
+    "occasion": [
+      "daily",
+      "self-care",
+      "gifting"
+    ],
+    "tags": [
+      "skincare set",
+      "charcoal",
+      "oil-control",
+      "gift box"
+    ],
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "romantic"
+    ],
+    "mood_badge": "🧘 Self-Care & Unwind"
+  },
+  {
+    "id": "P017",
+    "name": "Botanical Squalane Radiance Face Oil",
+    "category": "Beauty",
+    "brand": "Botanica Glow",
+    "price": 1499,
+    "description": "Weightless 100% plant-derived squalane facial oil paired with cold-pressed rosehip seed extract.",
+    "rating": 4.9,
+    "colors": [
+      "golden amber"
+    ],
+    "style": "organic clean",
+    "occasion": [
+      "night routine",
+      "winter",
+      "daily"
+    ],
+    "tags": [
+      "face oil",
+      "squalane",
+      "anti-aging",
+      "vegan"
+    ],
+    "image": "https://images.unsplash.com/photo-1608248597359-25f053531b9d?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P018",
+    "name": "Sandalwood & Cedar Beard Care Kit",
+    "category": "Beauty",
+    "brand": "Barber & Co.",
+    "price": 1199,
+    "description": "Handcrafted wooden box featuring cold-pressed conditioning beard oil, styling balm, and pearwood comb.",
+    "rating": 4.8,
+    "colors": [
+      "cedar brown"
+    ],
+    "style": "heritage craft",
+    "occasion": [
+      "daily grooming",
+      "gifting"
+    ],
+    "tags": [
+      "beard oil",
+      "organic",
+      "wood gift box",
+      "grooming"
+    ],
+    "image": "https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P019",
+    "name": "Invisible Fluid Sunscreen SPF 50+ PA++++",
+    "category": "Beauty",
+    "brand": "Soleil Derma",
+    "price": 799,
+    "description": "Ultra-lightweight invisible mineral sunscreen fluid with zero white cast, water-resistant for 80 minutes.",
+    "rating": 4.8,
+    "colors": [
+      "clear"
+    ],
+    "style": "dermatological",
+    "occasion": [
+      "beach",
+      "outdoor",
+      "daily"
+    ],
+    "tags": [
+      "spf 50",
+      "zero white cast",
+      "reef-safe",
+      "sun protection"
+    ],
+    "image": "https://images.unsplash.com/photo-1556228722-d0b741006509?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P020",
+    "name": "Nordic Sapphire Chronograph Watch",
+    "category": "Gifts",
+    "brand": "ChronoKultur",
+    "price": 4499,
+    "description": "Timeless 40mm Bauhaus chronograph featuring scratch-proof sapphire crystal, Italian suede band, and wooden gift box.",
+    "rating": 4.9,
+    "colors": [
+      "gunmetal grey",
+      "matte black"
+    ],
+    "style": "classic luxury",
+    "occasion": [
+      "birthday",
+      "anniversary",
+      "milestone gift"
+    ],
+    "tags": [
+      "sapphire crystal",
+      "chronograph",
+      "wooden box",
+      "water-resistant"
+    ],
+    "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "celebratory",
+      "romantic"
+    ],
+    "mood_badge": "🎯 Minimalist Focus & Keepsake"
+  },
+  {
+    "id": "P021",
+    "name": "Botanical Soy Candle Trio Gift Set",
+    "category": "Gifts",
+    "brand": "Atelier Lumina",
+    "price": 1299,
+    "description": "Hand-poured 100% natural soy wax candle trio featuring French Lavender, Cedarwood Forest, and Sweet Fig.",
+    "rating": 4.8,
+    "colors": [
+      "frosted stone"
+    ],
+    "style": "warm home",
+    "occasion": [
+      "housewarming",
+      "birthday",
+      "festive"
+    ],
+    "tags": [
+      "soy wax",
+      "aromatherapy",
+      "smokeless",
+      "gift packaging"
+    ],
+    "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill",
+      "romantic"
+    ],
+    "mood_badge": "🧘 Self-Care & Unwind"
+  },
+  {
+    "id": "P022",
+    "name": "Petite Rose Gold Mesh Dial Watch",
+    "category": "Gifts",
+    "brand": "ChronoKultur",
+    "price": 3999,
+    "description": "Ultra-slim 34mm watch featuring genuine mother-of-pearl dial and brushed rose gold stainless steel mesh strap.",
+    "rating": 4.9,
+    "colors": [
+      "rose gold"
+    ],
+    "style": "elegant luxury",
+    "occasion": [
+      "anniversary",
+      "birthday",
+      "gift for her"
+    ],
+    "tags": [
+      "mother of pearl",
+      "mesh strap",
+      "jewelry box",
+      "luxury"
+    ],
+    "image": "https://images.unsplash.com/photo-1508615039623-a25605d2b022?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "celebratory",
+      "romantic"
+    ],
+    "mood_badge": "🎯 Minimalist Focus & Keepsake"
+  },
+  {
+    "id": "P023",
+    "name": "Ceramic Pour-Over & Coffee Beans Gift Set",
+    "category": "Gifts",
+    "brand": "Roaster Craft",
+    "price": 2199,
+    "description": "Matte ribbed ceramic dripper, glass decanter, and 250g single-origin Arabica estate coffee beans in presentation box.",
+    "rating": 4.9,
+    "colors": [
+      "matte black",
+      "terracotta"
+    ],
+    "style": "artisan cafe",
+    "occasion": [
+      "birthday",
+      "colleague gift",
+      "coffee lover"
+    ],
+    "tags": [
+      "coffee set",
+      "pour over",
+      "single origin",
+      "gourmet"
+    ],
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "celebratory",
+      "romantic"
+    ],
+    "mood_badge": "🎁 Thoughtful Gift"
+  },
+  {
+    "id": "P024",
+    "name": "Vintage Brass Fountain Pen & Ink Set",
+    "category": "Gifts",
+    "brand": "Scribe & Co.",
+    "price": 1899,
+    "description": "Machined solid raw brass fountain pen with German iridium fine nib, 50ml archival black ink, and leather pen sleeve.",
+    "rating": 4.8,
+    "colors": [
+      "brushed brass"
+    ],
+    "style": "vintage heirloom",
+    "occasion": [
+      "graduation",
+      "promotion",
+      "milestone"
+    ],
+    "tags": [
+      "brass pen",
+      "fountain pen",
+      "archival ink",
+      "keepsake"
+    ],
+    "image": "https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "celebratory",
+      "romantic"
+    ],
+    "mood_badge": "🎯 Minimalist Focus & Keepsake"
+  },
+  {
+    "id": "P025",
+    "name": "Monogram Leather Travel Tag & Passport Set",
+    "category": "Gifts",
+    "brand": "Voyage Craft",
+    "price": 1399,
+    "description": "Handcrafted vegetable-tanned leather passport wallet with matching reinforced luggage tag in gold-foiled gift packaging.",
+    "rating": 4.7,
+    "colors": [
+      "cognac tan",
+      "deep navy"
+    ],
+    "style": "wanderlust",
+    "occasion": [
+      "honeymoon",
+      "bon voyage",
+      "traveler gift"
+    ],
+    "tags": [
+      "passport cover",
+      "leather",
+      "rfid blocking",
+      "gift set"
+    ],
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "adventurous",
+      "chill"
+    ],
+    "mood_badge": "🌿 Coastal Wanderlust"
+  },
+  {
+    "id": "P026",
+    "name": "Italian Full-Grain Leather Card Case",
+    "category": "Accessories",
+    "brand": "Cuoio Artisans",
+    "price": 1499,
+    "description": "Hand-stitched slim card wallet made from Tuscan vegetable-tanned leather with 6 card slots and RFID protection.",
+    "rating": 4.7,
+    "colors": [
+      "cognac brown",
+      "obsidian black"
+    ],
+    "style": "minimalist classic",
+    "occasion": [
+      "daily carry",
+      "gift"
+    ],
+    "tags": [
+      "full grain leather",
+      "rfid shield",
+      "slim",
+      "patina"
+    ],
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "productive",
+      "celebratory",
+      "romantic"
+    ],
+    "mood_badge": "🎯 Minimalist Focus & Keepsake"
+  },
+  {
+    "id": "P027",
+    "name": "Natural Jute & Canvas Espadrille Mules",
+    "category": "Accessories",
+    "brand": "Solarium Footwear",
+    "price": 1199,
+    "description": "Hand-stitched natural jute sole slip-on espadrilles with durable canvas upper and anti-slip rubber tread.",
+    "rating": 4.6,
+    "colors": [
+      "muted tan",
+      "ecru white"
+    ],
+    "style": "coastal casual",
+    "occasion": [
+      "beach",
+      "travel",
+      "summer"
+    ],
+    "tags": [
+      "espadrilles",
+      "slip-on",
+      "jute sole",
+      "coastal footwear"
+    ],
+    "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "adventurous",
+      "chill"
+    ],
+    "mood_badge": "🌿 Coastal Wanderlust"
+  },
+  {
+    "id": "P028",
+    "name": "Matte Tortoise Polarized Sunglasses",
+    "category": "Accessories",
+    "brand": "Aura Optics",
+    "price": 799,
+    "description": "Featherlight 22g recycled acetate frames equipped with UV400 glare-reducing polarized TAC lenses.",
+    "rating": 4.9,
+    "colors": [
+      "dark amber tortoise",
+      "matte black"
+    ],
+    "style": "vintage timeless",
+    "occasion": [
+      "travel",
+      "beach",
+      "driving"
+    ],
+    "tags": [
+      "polarized",
+      "uv400",
+      "anti-glare",
+      "summer essential"
+    ],
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "adventurous",
+      "chill"
+    ],
+    "mood_badge": "🌿 Coastal Wanderlust"
+  },
+  {
+    "id": "P029",
+    "name": "Water-Resistant City Commuter Backpack",
+    "category": "Accessories",
+    "brand": "Nomad Gear",
+    "price": 2799,
+    "description": "Weatherproof 20L rolltop daypack with dedicated 16-inch padded laptop sleeve and hidden anti-theft pocket.",
+    "rating": 4.8,
+    "colors": [
+      "charcoal grey",
+      "forest olive"
+    ],
+    "style": "urban utilitarian",
+    "occasion": [
+      "work",
+      "commute",
+      "travel"
+    ],
+    "tags": [
+      "laptop backpack",
+      "water-resistant",
+      "anti-theft",
+      "commuter"
+    ],
+    "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "adventurous",
+      "chill"
+    ],
+    "mood_badge": "🌿 Coastal Wanderlust"
+  },
+  {
+    "id": "P030",
+    "name": "Braided Waxed Cotton & Leather Belt",
+    "category": "Accessories",
+    "brand": "Tuscan Craft",
+    "price": 999,
+    "description": "Stretch-weave braided belt with genuine leather trims and antique brass pin buckle for pin-less micro adjustments.",
+    "rating": 4.7,
+    "colors": [
+      "navy & tan",
+      "olive & brown"
+    ],
+    "style": "smart casual",
+    "occasion": [
+      "daily",
+      "work",
+      "travel"
+    ],
+    "tags": [
+      "braided belt",
+      "stretch",
+      "micro-adjust",
+      "versatile"
+    ],
+    "image": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "chill"
+    ],
+    "mood_badge": "✨ Everyday Comfort"
+  },
+  {
+    "id": "P031",
+    "name": "Insulated Stainless Steel Travel Tumbler",
+    "category": "Accessories",
+    "brand": "HydroPure",
+    "price": 899,
+    "description": "500ml double-wall vacuum insulated bottle keeping cold drinks chilled for 24h and hot coffee warm for 12h.",
+    "rating": 4.9,
+    "colors": [
+      "matte slate",
+      "stone white"
+    ],
+    "style": "minimalist lifestyle",
+    "occasion": [
+      "work",
+      "gym",
+      "travel"
+    ],
+    "tags": [
+      "insulated bottle",
+      "bpa free",
+      "leak-proof",
+      "eco-friendly"
+    ],
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=800&q=80",
+    "moods": [
+      "energetic",
+      "productive"
+    ],
+    "mood_badge": "⚡ Active Energy"
+  }
+]

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { Product, Screen, ExtractedIntent } from '../../types';
+import { Product, Screen, ExtractedIntent, MoodType } from '../../types';
 import { ProductCard } from './ProductCard';
 import { FeedbackModal } from './FeedbackModal';
+import { MOOD_OPTIONS } from '../../data/sampleProducts';
 import { 
   Sparkles, 
   SlidersHorizontal, 
@@ -9,7 +10,8 @@ import {
   EyeOff, 
   Layers, 
   X,
-  CheckCircle2
+  CheckCircle2,
+  Smile
 } from 'lucide-react';
 
 interface RecommendationListProps {
@@ -32,6 +34,7 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
   onRecordFeedback
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [selectedMoodFilter, setSelectedMoodFilter] = useState<string>(intent.detectedMood || 'all');
   const [sortBy, setSortBy] = useState<'match' | 'priceAsc' | 'rating'>('match');
   const [hideViolations, setHideViolations] = useState<boolean>(true);
   const [likedIds, setLikedIds] = useState<string[]>([]);
@@ -49,11 +52,12 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
     setFeedbackProduct(p);
   };
 
-  // Filter products
+  // Filter products by category, mood, and constraint violations
   const filteredProducts = products.filter(p => {
     if (hideViolations && p.matchScore < 50) return false;
-    if (selectedCategory === 'all') return true;
-    return p.category === selectedCategory;
+    if (selectedCategory !== 'all' && p.category !== selectedCategory) return false;
+    if (selectedMoodFilter !== 'all' && (!p.moods || !p.moods.includes(selectedMoodFilter as MoodType))) return false;
+    return true;
   });
 
   // Sort products
@@ -65,7 +69,7 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
   });
 
   const categories = [
-    { id: 'all', label: 'All Picks' },
+    { id: 'all', label: 'All Categories' },
     { id: 'gift', label: 'Watches & Keepsakes' },
     { id: 'grooming', label: 'Artisanal Perfumes' },
     { id: 'electronics', label: 'Tech & Audio' },
@@ -76,17 +80,25 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
     { id: 'footwear', label: 'Footwear' }
   ];
 
+  const activeMoodObj = MOOD_OPTIONS.find(m => m.id === selectedMoodFilter);
+
   return (
     <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 pb-32">
       
       {/* Top Banner / Goal Reminder */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-zinc-200 gap-4 mb-8">
+      <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-zinc-200 gap-4 mb-6">
         <div>
-          <div className="flex items-center gap-2 mb-1.5">
+          <div className="flex items-center gap-2 mb-1.5 flex-wrap">
             <span className="px-3 py-1 rounded-full bg-white text-zinc-800 border border-zinc-200 text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 shadow-2xs">
               <Sparkles className="w-3.5 h-3.5 text-amber-500" />
               <span>Step 3 of 5 • Curated Recommendations</span>
             </span>
+            {intent.detectedMood && (
+              <span className="px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-xs font-bold flex items-center gap-1">
+                <span>{intent.moodEmoji}</span>
+                <span>Active Mood: {intent.moodVibe || intent.detectedMood}</span>
+              </span>
+            )}
             <span className="text-xs text-zinc-500 hidden sm:inline">
               Multi-Constraint AI Scoring &amp; Hard Filter Verification
             </span>
@@ -110,8 +122,43 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
         </div>
       </div>
 
+      {/* Mood Filter Pill Bar */}
+      <div className="mb-6 p-3 rounded-2xl bg-white border border-zinc-200/90 shadow-2xs flex items-center gap-2 overflow-x-auto no-scrollbar">
+        <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 shrink-0 pl-1">
+          <Smile className="w-3.5 h-3.5 text-amber-500" />
+          <span>Filter by Mood:</span>
+        </div>
+        <button
+          onClick={() => setSelectedMoodFilter('all')}
+          className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+            selectedMoodFilter === 'all'
+              ? 'bg-zinc-950 text-white font-bold shadow-xs'
+              : 'bg-zinc-100 text-zinc-600 hover:text-zinc-900 hover:bg-zinc-200'
+          }`}
+        >
+          All Vibes
+        </button>
+        {MOOD_OPTIONS.map((mood) => {
+          const isSel = selectedMoodFilter === mood.id;
+          return (
+            <button
+              key={mood.id}
+              onClick={() => setSelectedMoodFilter(mood.id)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap flex items-center gap-1.5 transition-all ${
+                isSel
+                  ? 'bg-zinc-950 text-white font-bold shadow-xs scale-102'
+                  : 'bg-zinc-100 text-zinc-700 hover:text-zinc-900 hover:bg-zinc-200'
+              }`}
+            >
+              <span>{mood.emoji}</span>
+              <span>{mood.title}</span>
+            </button>
+          );
+        })}
+      </div>
+
       {/* Filter and Sorting Controls Bar */}
-      <div className="p-3.5 rounded-3xl bg-white border border-zinc-200/90 mb-8 flex flex-col lg:flex-row lg:items-center justify-between gap-4 shadow-sm">
+      <div className="p-3.5 rounded-3xl bg-white border border-zinc-200/90 mb-6 flex flex-col lg:flex-row lg:items-center justify-between gap-4 shadow-sm">
         
         {/* Category Tabs */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1 lg:pb-0">
@@ -168,7 +215,10 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
       <div className="mb-6 flex flex-wrap items-center justify-between text-xs text-zinc-600 bg-white p-3.5 rounded-2xl border border-zinc-200/80 shadow-2xs gap-2">
         <div className="flex items-center gap-2">
           <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-          <span>Showing <strong>{sortedProducts.length}</strong> items meeting all constraints: Under ₹{intent.maxBudget.toLocaleString('en-IN')} • Curated Aesthetics</span>
+          <span>
+            Showing <strong>{sortedProducts.length}</strong> items meeting all constraints: Under ₹{intent.maxBudget.toLocaleString('en-IN')}
+            {activeMoodObj && ` • Mood: ${activeMoodObj.emoji} ${activeMoodObj.title}`}
+          </span>
         </div>
         {!hideViolations && (
           <span className="text-amber-700 font-semibold">
@@ -178,19 +228,31 @@ export const RecommendationList: React.FC<RecommendationListProps> = ({
       </div>
 
       {/* Products Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {sortedProducts.map((product) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            isCompared={comparedIds.includes(product.id)}
-            onToggleCompare={onToggleCompare}
-            onLike={handleLike}
-            onDislike={handleDislike}
-            isLiked={likedIds.includes(product.id)}
-          />
-        ))}
-      </div>
+      {sortedProducts.length === 0 ? (
+        <div className="p-12 text-center bg-white rounded-3xl border border-zinc-200">
+          <p className="text-sm font-semibold text-zinc-700">No items match this specific category &amp; mood combination.</p>
+          <button
+            onClick={() => { setSelectedCategory('all'); setSelectedMoodFilter('all'); }}
+            className="mt-3 px-4 py-2 rounded-xl bg-zinc-950 text-white text-xs font-semibold"
+          >
+            Reset Filters
+          </button>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {sortedProducts.map((product) => (
+            <ProductCard
+              key={product.id}
+              product={product}
+              isCompared={comparedIds.includes(product.id)}
+              onToggleCompare={onToggleCompare}
+              onLike={handleLike}
+              onDislike={handleDislike}
+              isLiked={likedIds.includes(product.id)}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Floating Compare Tray Drawer */}
       {comparedIds.length > 0 && (

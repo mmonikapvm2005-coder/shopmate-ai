@@ -9,7 +9,8 @@ import {
   ChevronDown, 
   ChevronUp, 
   AlertTriangle,
-  Tag
+  Tag,
+  Smile
 } from 'lucide-react';
 
 interface ProductCardProps {
@@ -52,10 +53,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
 
-          {/* Top Overlays */}
-          <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10">
+          {/* Top Left Overlays */}
+          <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10 max-w-[70%]">
             {/* Match Score Badge */}
-            <span className={`px-2.5 py-1 rounded-full text-xs font-bold backdrop-blur-md flex items-center gap-1 shadow-sm ${
+            <span className={`px-2.5 py-1 rounded-full text-xs font-bold backdrop-blur-md flex items-center gap-1 shadow-sm w-fit ${
               isViolation
                 ? 'bg-rose-600 text-white'
                 : product.matchScore >= 95
@@ -65,6 +66,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <Sparkles className="w-3 h-3 text-amber-300" />
               <span>{product.matchScore}% Match</span>
             </span>
+
+            {/* Mood Affinity Badge */}
+            {product.moodBadge && !isViolation && (
+              <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-white/95 text-zinc-900 border border-zinc-200/90 backdrop-blur-md shadow-xs flex items-center gap-1 truncate w-fit">
+                <span>{product.moodBadge}</span>
+              </span>
+            )}
 
             {/* Negative Filter Alert if violation */}
             {isViolation && (
@@ -160,13 +168,13 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             {showFullReasoning && (
               <div className="mt-3 pt-2.5 border-t border-amber-200/60 space-y-2 text-[11px] animate-in fade-in duration-200">
                 <div className="text-amber-900">
+                  <strong className="font-semibold text-zinc-900">Mood / Aesthetic:</strong> {product.aiReasoning.styleFit}
+                </div>
+                <div className="text-amber-900">
                   <strong className="font-semibold text-zinc-900">Budget Math:</strong> {product.aiReasoning.budgetFit}
                 </div>
                 <div className="text-amber-900">
                   <strong className="font-semibold text-zinc-900">Negative Filter Audit:</strong> {product.aiReasoning.constraintCheck}
-                </div>
-                <div className="text-amber-900">
-                  <strong className="font-semibold text-zinc-900">Silhouette/Style:</strong> {product.aiReasoning.styleFit}
                 </div>
               </div>
             )}
