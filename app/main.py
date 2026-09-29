@@ -39,6 +39,7 @@ def get_products_file_path() -> Path:
     """Locates products.json dynamically across different execution directories."""
     current_file = Path(__file__).resolve()
     candidate_paths = [
+        current_file.parent.parent / "data" / "products.json",
         current_file.parent.parent.parent / "data" / "products.json",
         Path("../data/products.json"),
         Path("data/products.json"),
